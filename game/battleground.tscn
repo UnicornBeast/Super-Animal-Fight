@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8p4gwb72vu3c"]
+
+[ext_resource type="Script" uid="uid://djtv3eiqlnekc" path="res://Sheep.gd" id="1_wrkao"]
+[ext_resource type="Texture2D" uid="uid://qs73ekko1xt3" path="res://images/sheepplacehold.jpg" id="2_66gel"]
+[ext_resource type="Texture2D" uid="uid://dkhphv0fw4nej" path="res://icon.svg" id="3_ildd2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ildd2"]
+radius = 52.009613
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ildd2"]
+size = Vector2(1146, 200)
+
+[node name="Battle ground" type="Node2D"]
+
+[node name="Sheep" type="CharacterBody2D" parent="."]
+script = ExtResource("1_wrkao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sheep"]
+position = Vector2(55, 53)
+shape = SubResource("CircleShape2D_ildd2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sheep"]
+position = Vector2(54.749996, 57)
+scale = Vector2(0.23101263, 0.23553717)
+texture = ExtResource("2_66gel")
+
+[node name="Platform" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2(577, 463)
+shape = SubResource("RectangleShape2D_ildd2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform"]
+position = Vector2(577.5, 464.5)
+scale = Vector2(8.9609375, 1.5859375)
+texture = ExtResource("3_ildd2")
