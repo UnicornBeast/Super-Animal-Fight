@@ -3,3 +3,6 @@ Just started the journal!
 
 Entry 2; 25-1-5
 Made a prototype where you can move on a floating platform
+
+Entry 3; 25-1-8
+made a small idle for sheep
