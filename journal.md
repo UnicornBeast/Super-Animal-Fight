@@ -9,3 +9,6 @@ made a small idle for sheep
 
 Entry 4; 25-1-10
 made a second character, gonna contuine later today and make it to be played by a second player, at this rate, ill make the game basic and not have multiple players to be able to choose from and only have the wolf and sheep
+
+Entry 5; 25-1-11
+worked on movement and attacks
